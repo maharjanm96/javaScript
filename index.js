@@ -1,13 +1,11 @@
 const person = {
   name: "Manish",
-  food: "Burger",
-  sayHello: function () {
-    console.log(`Hello, I am ${this.name}`);
-  },
-  eat: function () {
-    console.log(`I am ${this.name} and i am eating ${this.food}`);
-  },
+  address: "Gongabu",
+  age: "22",
+  isStudent: true,
 };
 
-person.sayHello();
-person.eat();
+console.log(person.name);
+console.log(person.address);
+console.log(person.age);
+console.log(person.isStudent);
