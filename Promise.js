@@ -1,15 +1,13 @@
 const myPromise = new Promise((resolve, reject) => {
-  let condition = true;
+  let name = "Manish";
 
-  if (condition == true)
-    resolve(`Promise is resolved. Condition is ${condition} `);
+  if (name == "Manish") resolve(`Promise is resolved. Name is ${name} `);
   else reject("Promise is rejected");
 });
-
 myPromise
   .then((message) => {
-    console.log(message);
+    console.log("Code is working fine.", message);
   })
-  .catch((message) => {
-    console.log(message);
+  .catch((error) => {
+    console.log(error);
   });
